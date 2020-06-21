@@ -1,0 +1,56 @@
+
+{# Extend the index.html view #}
+{% extends 'index.html' %}
+
+{# Define block content specific to this page #}
+{% block content %}
+
+<div class="row">
+
+    <div class="center">
+        <h3>Submit a Book to be Displayed!</h3>
+    </div>
+
+    {# Link to books page on submit #}
+    <form class="col s12" method="post">
+
+        {# csrf_token required to ensure secure submission #}
+        {% csrf_token %}
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Title" name="title" id="title" type="text" class="validate" required>
+          <label for="title">Title</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Author" name="author" id="author" type="text" class="validate" required>
+          <label for="author">Author</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <textarea placeholder="Description" id="description" name="description" class="materialize-textarea"></textarea>
+            <label for="description">Description</label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <textarea placeholder="Image" id="image" name="image" class="materialize-textarea"></textarea>
+            <label for="image">Image</label>
+          </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Rating" name="rating" id="rating" type="number" class="validate" max="5" required>
+          <label for="rating">Rating out of 5</label>
+        </div>
+      </div>
+      <a href="{% url 'books' %}">
+        <button class="btn waves-effect waves-light" type="submit">Create Book!
+          <i class="material-icons right">send</i>
+        </button>
+      </a>
+    </form>
+  </div>
+
+{# End block content tag #}
+{% endblock content %}

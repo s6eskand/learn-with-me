@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Rating Application</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper container">
+          <a href={% url 'index' %} class="brand-logo">I Love Django!</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/create">Add Book</a></li>
+            <li><a href="/books">Home</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div style="text-align: center">
+            <h1>Django Book Ratings</h1>
+            <h4>Made with the Help of Sam Eskandar and the amazing Django Developers</h4>
+        </div>
+
+        <div class="row">
+
+            <div class="col s4">
+                <div class="center">
+                    <i class="large material-icons" style="color: teal">access_time</i>
+                    <p>Faster Development</p>
+                    <p class="light center">Speedy Development Time with Django</p>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="center">
+                    <i class="large material-icons" style="color: pink">favorite</i>
+                    <p>Made with Love</p>
+                    <p class="light center">Made with love from <a href="https://github.com/s6eskand/learn-with-me">Sam Eskandar</a></p>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="center">
+                    <i class="large material-icons" style="color: orange">add_a_photo</i>
+                    <p>Material UI</p>
+                    <p class="light center">Frontend built with Materialize CSS</p>
+                </div>
+            </div>
+
+        </div>
+
+        {% block content %}
+
+        <div class="col-lg-12">
+            <div class="center">
+                <div>
+                    <h3>View the full List of Books!</h3>
+                </div>
+                <a href={% url 'books' %}>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Lets Go!
+                        <i class="material-icons right">send</i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        {% endblock content %}
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
