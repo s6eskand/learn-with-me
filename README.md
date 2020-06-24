@@ -13,3 +13,5 @@ Each project has a README that fully explains how to get started with the projec
 | [React JavaScript Hooks](./intro-react-hooks-js) | [Intro to Hooks Article](https://samtechblog.com/issues/2) | Introduction to React Hooks, function based views, and lifecycle methods with JavaScript |
 
 Hopefully you find this useful. If so leave a star, and join me on my journey of learning :smile:
+
+If you have a project/tutorial you would like to see done, pm me on [Twitter](https://twitter.com/sameskandar22)
