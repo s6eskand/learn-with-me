@@ -9,8 +9,9 @@ Each project has a README that fully explains how to get started with the projec
 ### Full Collection of Projects
 | Project Name | Blog Post | Description |
 | ------------ | --------- | ----------- |
-| [Django Introduction](./intro-django-application) | [Intro to Django Article](https://samtechblog.com/issues/3) | Building a Full Stack book listing application using Django. No JS or CSS required. |
-| [React JavaScript Hooks](./intro-react-hooks-js) | [Intro to Hooks Article](https://samtechblog.com/issues/2) | Introduction to React Hooks, function based views, and lifecycle methods with JavaScript |
+| [Django Introduction](./intro-django-application) | [Intro to Django Article](https://samtechblog.com/intro-to-django) | Building a Full Stack book listing application using Django. No JS or CSS required. |
+| [React JavaScript Hooks](./intro-react-hooks-js) | [Intro to Hooks Article](https://samtechblog.com/intro-to-hooks-js) | Introduction to React Hooks, function based views, and lifecycle methods with JavaScript |
+| [React with TypeScript](/.intro-to-hooks-ts) | [React with TypeScript Article](https://samtechblog.com/react-with-typescript) | Introduction to React and React Hooks with TypeScript |
 
 Hopefully you find this useful. If so leave a star, and join me on my journey of learning :smile:
 
